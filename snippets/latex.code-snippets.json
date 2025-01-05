@@ -1,0 +1,111 @@
+{
+	// Place your snippets for latex here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"gen-frame": {
+		"prefix": "@frame",
+		"body": [
+			"\\begin{frame}{$1}{}",
+			"  $2",
+			"\\end{frame}",
+		]
+	},
+	"gen-itemize": {
+		"prefix": "@itemize",
+		"body": [
+			"\\begin{itemize}",
+			"  \\item $1",
+			"\\end{itemize}",
+		]
+	},
+	"gen-myitemize": {
+		"prefix": "@myitemize",
+		"body": [
+			"\\begin{myitemize}",
+			"  \\item $1",
+			"\\end{myitemize}",
+		]
+	},
+	"gen-marker": {
+		"prefix": "@marker",
+		"body": [
+			"\\begin{marker}",
+			"  $1",
+			"\\end{marker}",
+		]
+	},
+	"gen-mybox": {
+		"prefix": "@mybox",
+		"body": [
+			"\\begin{mybox}",
+			"  $1",
+			"\\end{mybox}",
+		]
+	},
+	"generate-point": {
+		"prefix": "@point",
+		"body": [
+			"\\begin{point}{$1}",
+			"  $2",
+			"\\end{point}"
+		]
+	},
+	"generate-trititle": {
+		"prefix": "@trititle",
+		"body": [
+			"\\begin{trititle}{$1}",
+			"  $2",
+			"\\end{trititle}"
+		]
+	},
+	"gen-table": {
+		"prefix": "@table",
+		"body": [
+			"\\begin{table}[H]",
+			"  \\centering",
+			"  \\caption{$1} \\label{tab:$2}",
+			"  %\\begin{adjustbox}{width=\\columnwidth}",
+			"  \\begin{tabular}{$3}",
+			"  \\toprule",
+			"  $4",
+			"  \\midrule",
+			"  $5",
+			"  \\bottomrule",
+			"  \\end{tabular}",
+			"  %\\end{adjustbox}",
+			"\\end{table}",
+		]
+	},
+	"gen-figure": {
+		"prefix": "@figure",
+		"body": [
+			"\\begin{figure}[H]",
+			"  \\centering",
+			"  \\includegraphics[width=.8\\columnwidth]{figure/$1}",
+			"  \\caption{$2} \\label{fig:$3}",
+			"\\end{figure}",
+		]
+	},
+	"gen-twocolumnminipage": {
+		"prefix": "@twocolumnminipage",
+		"body": [
+			"\\begin{minipage}{.49\\columnwidth}",
+			"  $1",
+			"\\end{minipage}\\noindent",
+			"\\begin{minipage}{.49\\columnwidth}",
+			"  $2",
+			"\\end{minipage}",
+		]
+	}
+}
+
